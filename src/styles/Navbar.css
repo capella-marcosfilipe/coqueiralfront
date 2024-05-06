@@ -1,0 +1,89 @@
+
+.header-inner-content {
+    max-width: 1300px;
+    margin-left: 50px;
+    margin-right: auto;
+    justify-content: flex-start;
+    
+  }
+  
+
+  .navbar {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    position: sticky; /* mantém o navbar em cima */
+    top: 0;
+    box-shadow: 10px 0px 10px #f0f0f0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+  }
+  */
+  .logo img {
+    height: 40px; /* Ajuste conforme necessário */
+    width: auto; /* Ajuste conforme necessário */
+    margin-right: 50px; /* Espaçamento entre a logo e os itens do menu */
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    align-items:flex-start;
+  }
+  
+  .nav-icon-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-icon-container img {
+    position: fixed;
+    top: 10px; /* ajuste conforme necessário */
+    right: 10px; /* ajuste conforme necessário */
+    cursor: pointer;
+  }
+  
+  .nav-icon-container img:first-child {
+    margin-right: 1rem;
+  }
+  
+  nav ul li {
+    color: #838383;
+    margin-right: 1.5rem;
+    cursor: pointer;
+  }
+ 
+  .navlink{
+    text-decoration: none;
+  }
+  
+  nav ul li:hover {
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+  }
+  
+  .menu-button {
+    display: none;
+  }
+  
+  .ajuda {
+    margin-right: 250px;
+    margin-top: 10px;
+  }
+  .perfil {
+    margin-right: 190px;
+    margin-top: 14px;
+  }
+  .notificacao {
+    margin-right: 120px;
+    margin-top: 15px;
+  }
+  
+  .sacola {
+    margin-right: 50px;
+    margin-top: 10px;
+  }

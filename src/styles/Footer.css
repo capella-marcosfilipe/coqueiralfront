@@ -1,0 +1,21 @@
+footer{
+    text-align: center;
+    border-top: 1px solid #ccc;
+    width: 100%; /* Defina a largura como 100% */
+}
+
+footer .geral {
+    margin: auto;
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    
+ }
+ 
+ footer h4{
+    
+     color: #303D4D;
+ }
+ 
+ footer p{
+     color: #557193;
+ }
