@@ -1,0 +1,96 @@
+
+.containerCadastro {
+    width: 95%; 
+    max-width: 600px; 
+    margin: 50px auto; 
+    padding: 30px; 
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.h2Cadastro {
+    text-align: center;
+    color: #303D4D;
+}
+
+.form-groupCadastro {
+    margin-bottom: 25px;
+}
+
+.labelCadastro {
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.inputCadastro[type="text"],
+.inputCadastro[type="email"],
+.inputCadastro[type="password"],
+.inputCadastro[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.btn-cadastrarCadastro {
+    background-color: #007bff;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    margin-top: 15px;
+    background-color: #303D4D;
+    color: #fff;
+
+}
+
+.btn-loginCadastro {
+    color: #303D4D;
+    border: 1px solid;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+hr {
+    margin-top: 30px;
+}
+
+
+
+.btn-cadastrarCadastro:hover, .btn-loginCadastro:hover {
+    font-size: 17px;
+}
+
+.btn-textoCadastro {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none; 
+    outline: none; 
+}
+
+@media (max-width: 600px) {
+    .containerCadastro {
+        width: 90%;
+    }
+}
+

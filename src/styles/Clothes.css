@@ -1,0 +1,192 @@
+.containerClothes1 {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   margin-bottom: 150px;
+  }
+  
+  .elementoClothes1 {
+    display: inline-block;
+    vertical-align: top; /* Alinha com o topo do elemento adjacente */
+    width: 400px; /* Defina a largura conforme necessário */
+    height: 400px; /* Defina a altura conforme necessário */
+    background-color: #fff; /* Cor de fundo do elemento */;
+    margin: 0px; /* Adicione margens conforme necessário */
+  }
+
+  .bagClothes1{
+    font-size: 30px;
+    margin-left: 20px;
+    color: white;
+  }
+
+  .heartClothes1{
+  position: relative;
+  left: 90px;
+   font-size: 50px;
+  }
+
+  .elemento-com-imagemClothes1{
+    padding-left: 20px;
+
+  }
+  
+  .com-imagemClothes1 img {
+    margin-top: 25px;
+    width: 80%; /* Ajusta a largura da imagem para preencher o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+  .titulo-lojaClothes1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: poppins;
+    margin-bottom: 0px;
+    color: #303d4d;
+    font-weight: normal;
+   
+  }
+  
+ 
+  
+  .h2Clothes {
+    text-align: left;
+    font-size: 22px;
+    font-family: poppins;
+    margin-bottom: 20px;
+    color: #557193;
+  }
+  
+  h3 {
+    text-align: left;
+    font-size: 10px;
+    font-family: poppins;
+    margin-bottom: 10px;
+    color: #557193;
+    font-weight: normal;
+  }
+  
+  .valorClothes1 {
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 0%;
+    margin-bottom: 5px;
+    font-size: 40px;
+    color: #557193;
+  }
+  
+  .avistaClothes1 {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 1px;
+    font-size: 12px;
+    color: #557193;
+  }
+  
+  .retanguloClothes1 {
+    position: relative; 
+    top: 30%;
+    left: 13%;
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    text-align: left; 
+    width: 70%; /* largura */
+    height: 13%; /* altura */
+    background-color: #557193; /* cor de fundo */
+    border: 0px; /* borda */
+    border-radius: 10px;
+  }
+  
+  .imagem-sacolaClothes1 {
+    width: 20%; /* Defina a largura conforme necessário */
+    height: auto; 
+    position: relative; 
+    top: -3%;
+    left: 5%; 
+  }
+  
+  .retanguloClothes1 p {
+    font-family: poopins, arial;
+    color: #f0f0f0;
+    position: relative; 
+    top: 1%;
+    left: 10%; 
+    font-weight: bold;
+    font-size: 125%;
+  }
+  
+  .imagem-coracaoClothes1 {
+    width: 25%; /* Defina a largura conforme necessário */
+    height: auto; 
+    position: relative; 
+    top: 0%;
+    left: 25%; 
+  }
+  
+  .quadradoClothes1{
+    position: relative; 
+    top: 35%;
+    left: 13%;
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    text-align: left; 
+    width: 300px; /* largura */
+    height: 50px; /* altura */
+    background-color: #fff; /* cor de fundo */
+    border: 0px; /* borda */
+    border-radius: 10px;
+  }
+  
+  .imagem-marcaClothes1 {
+     width: 40px; /* Defina a largura conforme necessário */
+      height: auto; 
+      position: relative; 
+      top: -3%;
+      left: 0%; 
+  }
+  
+  .quadradoClothes1 p {
+     font-family: poopins, arial;
+      color: #557193;
+      position: relative; 
+      top: 0%;
+      left: 5%; 
+      font-weight: bold;
+      font-size: 20px;
+    }
+  
+  .retaquadroClothes1 {
+    position: absolute; 
+    top: 10%;
+    left: 82%;
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    text-align: left; 
+    width: 100px; /* largura */
+    height: 40px; /* altura */
+    background-color: #fff; /* cor de fundo */
+    border-color: #000;;
+    border: 1px solid #557193; /* borda */
+    border-radius: 30px;
+  }
+  
+  .retaquadroClothes1 p {
+    font-family: poopins, arial;
+    color: #557193;
+    position: relative; 
+    top: 0%;
+    left: 15%; 
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+@media (max-width:1023px){
+
+  .containerClothes1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+}

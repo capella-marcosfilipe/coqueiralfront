@@ -1,0 +1,27 @@
+#modal {
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    border-width: 1px;
+    position: fixed;
+    top: 56.5%;
+    left: 87.5%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 40px;
+  }
+  
+  #mennoti {
+    color: #303D4D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 2rem;
+    
+  }
+  

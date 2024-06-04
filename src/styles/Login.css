@@ -1,0 +1,83 @@
+.login-formLogin {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 100px 30px;
+    margin-top: 90px;
+    max-height: 590px;
+    margin-bottom: 100px;
+  }
+  
+  .login-formLogin h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: -20px;
+    color: #303d4d;
+  }
+  
+  .login-formLogin .input-containerLogin input {
+    width: calc(100% - 20px);
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin: 0 auto 10px;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .login-formLoginLogin .input-containerLogin:nth-child(2) {
+    margin-bottom: 30px;
+    
+  }
+
+
+  .login-formLogin button {
+    width: calc(100% - 20px);
+    padding: 12px;
+    background-color: #303d4d;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 10px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  
+  .login-formLogin button:hover {
+    background-color: #557193;
+  }
+  
+  .login-formLogin p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #838383;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+  
+  .login-formLogin p button {
+    width: calc(100% - 20px);
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid #303d4d;
+    border-radius: 30px;
+    color: #303d4d;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,538 @@
+.settingsSection {
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+.containers1Settings {
+    display: flex;
+    flex-direction: column;   
+    margin: 0px 0px 500px 0px; 
+}
+
+.profilesSettings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;        
+}
+
+.profileIconsSettings {
+    font-size: 100px;
+}
+
+.profileInfosSettings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding-bottom: 25px;
+}
+
+.profileInfosSettings h3 {
+    font-size: 35px;
+    padding-left: 5px;
+    color: #303D4D;
+    font-weight: 600;
+    
+}
+
+#verifyEmailSettings{
+ font-weight: 400;
+ text-decoration: underline;
+ cursor: pointer;
+ margin-bottom: 25px !important;
+}
+
+#verifyEmailSettings:hover{
+    font-size: 12.5px;
+}
+
+
+.iconsSettings {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.iconsSettings p {
+    font-size: 15px;
+    margin-left: 5px;  
+}
+
+.iconsSettings p:hover{
+    font-size: 16px;  
+}
+
+.iconLinksSettings {
+    text-decoration: none;
+    color: black;
+}
+
+#configsSettings {
+    color: #303D4D;
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+.containers2Settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #F5F7F9;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.074);
+}
+
+.formGroupsSettings {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.formGroupsSettings h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.personalInfosSettings {
+    display: flex;
+    flex-direction: row;
+}
+
+.profileInfosASettings {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+.profileInfosBSettings {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+#emailSettings {
+    margin-bottom: 0px;
+}
+
+#emaillabelsSettings {
+    margin-bottom: 100px;
+}
+
+.profileInfosBSettings p {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.adressInfosSettings {
+    display: flex;
+    flex-direction: row;
+}
+
+.adressInfosASettings {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.adressInfosBSettings {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.labelSettings {
+    font-size: 15px;
+}
+
+.inputSettings {
+    width: 350px; 
+    padding: 10px; 
+    margin-bottom: 15px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    font-size: 16px; 
+    box-sizing: border-box; 
+}
+
+.formBtnSettings {
+    color: white; 
+    background-color: #303D4D; 
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+   
+}
+
+.formBtnSettings:hover{
+    font-size: 18px;
+}
+
+.deleteAccountSettings{
+    width: 100%;
+
+}
+
+
+
+.deleteBtnSettings{
+    background: none;
+    border: none;
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 16px;
+    padding:0px 0px 10px 15px;
+}
+
+.deleteBtnSettings:hover{
+    font-size: 16.5px;
+}
+
+
+.modalSettings {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-contentSettings {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .modalPSettings{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  
+  .modalBtnSettings{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+   
+  }
+
+  .modalBtnSettings > button {
+    cursor: pointer;
+  }
+
+  .logoutModalOverlaySettings {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .logoutModalContentSettings {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .logoutModalContentSettings h2{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .logoutModalButtonsSettings {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .logoutModalButtonsSettings .cancelButtonSettings,
+  .logoutModalButtonsSettings .confirmButtonSettings {
+    
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+   .cancelButtonSettings, .confirmButtonSettings   {
+    color: white; 
+    background-color: #303D4D; 
+    font-weight: bold;
+    
+  }
+  
+  
+  
+  .logoutModalButtonsSettings .cancelButtonSettings:hover,
+  .logoutModalButtonsSettings .confirmButtonSettings:hover {
+    color:#303D4D ;
+    background: white;
+  }
+
+.inputToggleSettings, .toggleRightSettings, .toggleLeftSettings{
+    display: none;
+}
+  
+
+@media (max-width: 1684px){
+    .containers2Settings{
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 1425px){
+
+    .settingsSection{
+        justify-content: center;
+      }
+      
+      .containers1Settings{ 
+        height: 100%;
+        transition: 0.5s ease; 
+        transform: translateX(-250px);
+        display: none;
+        
+        
+       
+      }
+
+    .containers2Settings{
+        width: 60%;
+        z-index: 0;
+    }
+
+    .inputToggleSettings{
+        position: fixed;
+        opacity: 0;
+        z-index: 3;
+        top: 158px;
+        left: 128px;
+        transform: scale(1.5);
+        display: flex !important;
+        
+      }
+
+      .toggleRightSettings{
+        cursor: pointer;
+        position: fixed;
+        top: 150px;
+        left: 120px;
+        height: 30px;
+        width: 30px;
+        z-index: 2;
+        
+        display: flex !important;
+      }
+
+     
+
+      .toggleLeftSettings{
+        cursor: pointer;
+        position: fixed;
+        top: 150px;
+        left: 120px;
+        height: 30px;
+        width: 30px;
+        z-index: 2;
+      }
+
+      .dropRightSettings, .dropLeftSettings{
+        font-size: 30px;
+        cursor: pointer;
+      }
+
+    input{
+        width: 300px;
+    }
+
+    .inputToggleSettings:checked ~ .containers1Settings{
+        transform: translateX(0);
+        z-index: 1;
+        position: absolute;
+        background-color: white;
+        top: 70px;
+        left: 0px;
+        height: 894px;
+        margin-top: 10px;
+        display: flex !important;
+        padding-top: 80px;
+    
+        
+       }
+
+
+       .inputToggleSettings:checked ~ .toggleRightSettings{
+        display: none !important;
+       }
+
+       .inputToggleSettings:checked ~ .toggleLeftSettings{
+        display: flex !important;
+       }
+}
+
+@media (max-width: 1372px){
+
+    .personalInfosSettings, .adressInfosSettings{
+        flex-direction: column;
+       }
+    
+       .profileInfosASettings, .profileInfosBSettings,.adressInfosASettings, .adressInfosBSettings{
+        margin: auto;
+       }
+
+}
+
+@media (max-width: 1291px){
+    .containers2Settings{
+        width: 70%;
+    }
+
+    input{
+        width: 300px;
+    }
+}
+
+@media (max-width: 1025px){
+    .containers2Settings{
+        width: 70%;
+    }
+
+    input{
+        width: 250px;
+    }
+}
+
+@media (max-width: 906px){
+
+    .inputToggleSettings:checked ~ .containers1Settings{
+        height: 1355px;
+      }
+
+
+    .containers1Settings{
+        margin-bottom: 900px;
+    }
+    .containers2Settings{
+        width: 70%;
+    }
+
+   .personalInfosSettings, .adressInfosSettings{
+    flex-direction: column;
+   }
+
+   .profileInfosASettings, .profileInfosBSettings,.adressInfosASettings, .adressInfosBSettings{
+    margin: auto;
+   }
+}
+
+@media (max-width: 649px){
+
+    .inputToggleSettings{
+        position: fixed;
+        opacity: 0;
+        z-index: 3;
+        top: 148px;
+        left: 110px;
+        transform: scale(1.5);
+        display: flex !important;
+        
+      }
+
+      .toggleRightSettings{
+        top: 142px;
+        left: 104px;
+      }
+
+     
+
+      .toggleLeftSettings{
+        top: 142px;
+        left: 104px;
+      }
+
+      .dropRightSettings, .dropLeftSettings{
+        font-size: 25px;
+      }
+
+      .inputToggleSettings:checked ~ .containers1Settings{
+        height: 1339px;
+      }
+
+    .containers1Settings h3{
+        font-size: 25px;
+    }
+
+
+    .profileIconsSettings{
+        font-size: 60px;
+    }
+
+    .iconsSettings{
+        font-size:20px ;
+    }
+
+    .iconsSettings p{
+        font-size: 12px;
+    }
+
+    .containers2Settings h1{
+        font-size: 20px;
+    }
+
+    .inputSettings{
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 533px){
+    .containers2Settings h1{
+        font-size: 15px;
+    }
+
+}

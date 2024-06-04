@@ -1,3 +1,6 @@
+import { FaSearch } from "react-icons/fa";
+import "../styles/searchbar.css"
+
 export default function Searchbar() {
   return (
     <div className="search-container">
@@ -7,7 +10,7 @@ export default function Searchbar() {
           id="search"
           placeholder="Pesquise o que você procura..."
         />
-        <i className="fa-solid fa-magnifying-glass"></i>
+        <FaSearch className="searchIcon"/>
       </div>
     </div>
   );

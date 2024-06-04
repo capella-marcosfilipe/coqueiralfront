@@ -1,16 +1,15 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import ProdutosContainer from "../components/ProdutosContainer";
-import "../styles/Home.css";
 import Searchbar from "../components/Searchbar";
+import Clothes4 from "../components/Clothes4"
 
-export default function Home() {
+export default function Roupa4() {
   return (
     <>
       <Navbar />
       <Searchbar />
       <hr className="divider" />
-      <ProdutosContainer title={"PRODUTOS EM ALTA"} />
+      <Clothes4 />
       <Footer />
     </>
   );

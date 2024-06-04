@@ -1,89 +1,150 @@
+.navbar {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  box-shadow: 10px 0px 10px #f0f0f0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
 
-.header-inner-content {
-    max-width: 1300px;
-    margin-left: 50px;
-    margin-right: auto;
-    justify-content: flex-start;
-    
-  }
+
+
+.logo img {
+  height: 40px; 
+  width: auto; 
+  margin-right: 50px;
+}
+
+nav{
+  padding-left: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
   
+}
 
+.nav-icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-icon-container img {
+  position: fixed;
+  top: 10px; 
+  right: -70px; 
+  cursor: pointer;
+}
+
+
+nav ul li {
+  color: #838383;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  transform: translateY(-5px);
+  transition: all 0.2s;
+  font-weight: bold;
+}
+
+.ajuda {
+  margin-right: 92px !important; 
+  margin-top: 10px;
+}
+
+.perfil {
+  margin-right: 200px;
+  margin-top: 14px;
+}
+
+.notificacao {
+  margin-right: 150px;
+  margin-top: 15px;
+}
+
+
+.menu-button {
+  display: none;
+}
+
+.menu-button i {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+@media only screen and (max-width: 900px) {
   .navbar {
-    background-color: #f0f0f0;
-    padding: 1rem;
-    position: sticky; /* mantém o navbar em cima */
-    top: 0;
-    box-shadow: 10px 0px 10px #f0f0f0;
-    z-index: 99;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-button {
+    display: block;
+    background-color: transparent;
+  }
+
+  .header-inner-content {
+    display: none;
+  }
+
+  .header-inner-content {
+    display: none;
+    position: absolute;
+    top: 80px; 
+    left: 0;
     width: 100%;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 99;
   }
-  */
-  .logo img {
-    height: 40px; /* Ajuste conforme necessário */
-    width: auto; /* Ajuste conforme necessário */
-    margin-right: 50px; /* Espaçamento entre a logo e os itens do menu */
+
+  .show-menu {
+    display: block !important;
   }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    align-items:flex-start;
-  }
-  
-  .nav-icon-container {
-    display: flex;
-    align-items: center;
-  }
-  
+
   .nav-icon-container img {
-    position: fixed;
-    top: 10px; /* ajuste conforme necessário */
-    right: 10px; /* ajuste conforme necessário */
-    cursor: pointer;
+    display: block;
   }
-  
-  .nav-icon-container img:first-child {
-    margin-right: 1rem;
+
+  nav ul {
+    flex-direction: column;
+    padding: 1rem;
   }
-  
+
   nav ul li {
-    color: #838383;
-    margin-right: 1.5rem;
-    cursor: pointer;
-  }
- 
-  .navlink{
-    text-decoration: none;
-  }
-  
-  nav ul li:hover {
+    margin-bottom: 1rem;
     transform: translateY(-5px);
     transition: all 0.2s;
     font-weight: bold;
+    align-items: center;
+    justify-content: center;
   }
-  
-  .menu-button {
-    display: none;
-  }
-  
-  .ajuda {
-    margin-right: 250px;
-    margin-top: 10px;
-  }
-  .perfil {
-    margin-right: 190px;
-    margin-top: 14px;
-  }
-  .notificacao {
-    margin-right: 120px;
-    margin-top: 15px;
-  }
-  
-  .sacola {
-    margin-right: 50px;
-    margin-top: 10px;
-  }
+}
+
+.menu-button {
+  position: fixed;
+  top: 21px; 
+  right: 200px; 
+  z-index: 1000; 
+  width: 20%;
+  border: none;
+}
+
+.dropDownNavbar:hover{
+font-size: 32px;
+}
+
+.dropDownNavbar{
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}

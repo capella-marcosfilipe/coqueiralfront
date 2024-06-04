@@ -1,0 +1,165 @@
+
+
+/* Seção Ética */
+
+
+
+/* Container para layout responsivo */
+.containerEtica {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Imagem */
+.imagemEtica {
+  width: 505px;
+  height: 527px;
+  overflow: hidden;
+}
+
+.imagemEtica img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+/* Texto */
+.textoEtica {
+  flex: 1;
+  padding: 20px;
+}
+
+.textoEtica h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.textoEtica p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .containerEtica {
+    flex-direction: column;
+  }
+
+  .imagemEtica {
+    width: 100%;
+    height: auto;
+  }
+
+  .textoEtica {
+    order: 1;
+  }
+}
+
+
+.App1Etica {
+  text-align: center;
+  padding-top: 0; /* Remove o padding superior do App */
+}
+
+
+.dividerEtica {
+  border: none;
+  border-top: 1px solid #cccccc;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.main-titleEtica {
+  color: #303D4D;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+.info-textEtica {
+  color: #838383;
+  text-align: center;
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.info-textEtica .highlightEtica {
+  color: #303D4D;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-formEtica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  width: 60%;
+  max-width: 800px;
+  background-color: #f8f8f8;
+}
+
+.question-inputEtica {
+  height: 100px;
+  resize: none;
+}
+
+.send-buttonEtica {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #838383;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .main-titleEtica {
+    font-size: 1.5rem;
+  }
+
+  .info-textEtica {
+    font-size: 0.9rem;
+  }
+
+
+  .email-inputEtica,
+  .question-inputEtica,
+  .send-buttonEtica {
+    font-size: 0.9rem;
+  }
+
+  .footer-textEtica,
+  .footer-emailEtica {
+    font-size: 0.8rem;
+  }
+}
+
+  .main-titleEtica {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+
+  .info-textEtica {
+    font-size: 0.9rem;
+    margin: 10px 20px;
+  }
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+.containerHelp {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    margin-bottom: 100px;
+  }
+  
+  .titulo-ajudaHelp {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: poppins;
+    margin-bottom: 10px;
+    color: #303d4d;
+    margin-top: 20px;
+  }
+  
+  .duvidasHelp {
+    text-align: center;
+    font-size: 18px;
+    font-family: poppins;
+    margin-bottom: 35px;
+    margin-top: 50px;
+    color: #557193;
+    font-weight: normal;
+  }
+  
+  .linha-horizontalHelp {
+    width: 50%; 
+    border-top: 1px solid #ccc;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .h1Help {
+    text-align: center;
+    font-size: 24px;
+    font-family: poppins;
+    margin-bottom: 10px;
+    color: #557193;
+  }
+  
+  .h2Help {
+    text-align: center;
+    font-size: 18px;
+    font-family: poppins;
+    margin-bottom: 35px;
+    margin-top: 50px;
+    color: #557193;
+  }
+  
+  .h3Help {
+    text-align: center;
+    font-size: 18px;
+    font-family: poppins;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #838383;
+  }
+  
+  .input-wrapperHelp {
+    margin-bottom: 20px;
+  }
+  
+  .labelHelp {
+    display: block;
+    font-family: poppins;
+    margin-bottom: 5px;
+  }
+  
+  .inputHelp[type="email"],
+  .textareaHelp {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .buttonHelp {
+    background-color: #303d4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .buttonHelp:hover {
+    background-color: #557193;
+  }
+  
+  .formHelp {
+    text-align: center; 
+    
+  }
+  .subtituloHelp {
+    font-weight: normal;
+    margin-top: 15px;
+  }
