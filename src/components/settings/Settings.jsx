@@ -7,7 +7,7 @@ import { IoIosArrowDroprightCircle, IoIosArrowDropleftCircle } from "react-icons
 //import { Link } from "react-router-dom";
 import Modal1 from "./Modal1";
 import LogoutModal from './LogoutModal';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Settings.css";
 
 const options = [
@@ -32,6 +32,16 @@ const Settings = () => {
   const [uf, setUf] = useState("");
   const [openModal, setOpenModal] = useState(false);
   const [openLogoutModal, setOpenLogoutModal] = useState(false);
+
+  // Recupera o nome do usuário do localStorage
+  const [userNome, setUserNome] = useState("");
+
+  useEffect(() => {
+    const nomeSalvo = localStorage.getItem("nomeUsuario");
+    if (nomeSalvo) {
+      setUserNome(nomeSalvo);
+    }
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -64,31 +74,26 @@ const Settings = () => {
   return (
     <section className="settingsSection">
       <input type="checkbox" className="inputToggleSettings"></input>
-    <div className="toggleRightSettings">
+      <div className="toggleRightSettings">
         <IoIosArrowDroprightCircle className="dropRightSettings" />
-    </div>
-    <div className="toggleLeftSettings">
-        <IoIosArrowDropleftCircle className="dropLeftSettings"/>
-    </div>
-
-         
+      </div>
+      <div className="toggleLeftSettings">
+        <IoIosArrowDropleftCircle className="dropLeftSettings" />
+      </div>
       <div className="containers1Settings">
         <div className="profilesSettings">
           <div className="profileIconsSettings">
             <CgProfile />
-          </div> 
-         
-          <div className="profileInfosSettings" >
-            <h3>Larissa</h3>
-          </div>       
-          
+          </div>
+          <div className="profileInfosSettings">
+            <h3>{userNome || "Usuário"}</h3>
+          </div>
         </div>
         <div className="container1-iconsSettings">
           <div className="iconsSettings">
             <FaUser />
-              <p>Meu Perfil</p>  
+            <p>Meu Perfil</p>
           </div>
-         
           <div className="iconsSettings" onClick={() => setOpenLogoutModal(true)}>
             <IoExitOutline />
             <p>Sair da Conta</p>
@@ -102,9 +107,9 @@ const Settings = () => {
           <div className="personalInfosSettings">
             <div className="profileInfosASettings">
               <label htmlFor="name" className="labelSettings">Nome</label>
-              <input type="text" name="name" id="nameSettings" className="inputSettings" autoComplete="given-name" onChange={(e) => setName(e.target.value)} required/>
+              <input type="text" name="name" id="nameSettings" className="inputSettings" autoComplete="given-name" onChange={(e) => setName(e.target.value)} required />
               <label htmlFor="username" className="labelSettings">Usuário</label>
-              <input type="text" name="username" id="usernameSettings" className="inputSettings" autoComplete="username" onChange={(e) => setUsername(e.target.value)} required/>
+              <input type="text" name="username" id="usernameSettings" className="inputSettings" autoComplete="username" onChange={(e) => setUsername(e.target.value)} required />
               <label htmlFor="birthDate" className="labelSettings">Data de Nascimento</label>
               <input type="date" id="birthDateSettings" name="birthDate" className="inputSettings" autoComplete="bday" value={birthDate} onChange={(e) => setBirthDate(e.target.value)} />
             </div>
@@ -112,7 +117,7 @@ const Settings = () => {
               <label htmlFor="lastName" className="labelSettings">Sobrenome</label>
               <input type="text" name="sobrenome" id="lastNameSettings" className="inputSettings" autoComplete="family-name" onChange={(e) => setLastName(e.target.value)} />
               <label htmlFor="email" className="labelSettings">Email</label>
-              <input type="email" name="email" id="emailSettings" className="inputSettings" autoComplete="email" onChange={(e) => setEmail(e.target.value)} required/>
+              <input type="email" name="email" id="emailSettings" className="inputSettings" autoComplete="email" onChange={(e) => setEmail(e.target.value)} required />
               <p id="verifyEmail">Verificar email</p>
               <Select options={options} classNamePrefix="custom-selectSettings" onChange={(option) => setGender(option.value)} />
             </div>
@@ -125,7 +130,7 @@ const Settings = () => {
               <label htmlFor="number" className="labelSettings">Número</label>
               <input type="number" name="number" id="numberSettings" className="inputSettings" autoComplete="address-line2" onChange={(e) => setNumber(e.target.value)} />
               <label htmlFor="bairro" className="labelSettings">Bairro</label>
-              <input type="text" name="bairro" id="bairroSettings"  className="inputSettings" autoComplete="address-level2" onChange={(e) => setBairro(e.target.value)} />
+              <input type="text" name="bairro" id="bairroSettings" className="inputSettings" autoComplete="address-level2" onChange={(e) => setBairro(e.target.value)} />
             </div>
             <div className="adressInfosBSettings">
               <label htmlFor="streetname" className="labelSettings">Nome da Rua</label>
@@ -139,13 +144,11 @@ const Settings = () => {
           <div>
             <button type="submit" className="formBtnSettings">Salvar</button>
           </div>
-
           <div className="deleteAccountSettings">
             <button className="deleteBtnSettings" onClick={() => setOpenModal(true)}>
               Apagar conta
             </button>
           </div>
-
           <div>
             <Modal1 isOpen={openModal} onClose={() => setOpenModal(false)} />
             <LogoutModal 

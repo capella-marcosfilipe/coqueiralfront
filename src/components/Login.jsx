@@ -13,22 +13,20 @@ const Login = () => {
         <div className="input-containerLogin">
           <input type="password" placeholder="Senha" required />
         </div>
-        <Link to = "/Home">
-         <button type="submit">ENTRAR</button>
+        <Link to="/Home">
+          <button type="submit">ENTRAR</button>
         </Link>
       </form>
       <hr />
       <p>Não tem uma conta?
-        <Link to = "/Cadastro">
-        <button type="submit">CADASTRE-SE!</button>
+        <Link to="/Cadastro">
+          <button type="submit">CADASTRE-SE!</button>
         </Link>
-         </p>
-         <Link to= "/Loginadm">
+      </p>
+      <Link to="/Loginadm">
         <p>Administrador</p> 
-         </Link>
-        
+      </Link>
     </div>
-    
   );
 };
 
